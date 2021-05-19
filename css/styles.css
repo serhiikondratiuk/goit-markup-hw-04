@@ -156,7 +156,7 @@ body {
   text-align: center;
   background-color: var(--footer-backgroung-color);
   background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradiet-end)),
-    url(./images/herobgi.jpg);
+    url(/images/herobgi.jpg);
   color: var(--primary-background-color);
   max-width: 1600px;
   margin-left: auto;
