@@ -155,7 +155,7 @@ body {
 .hero {
   text-align: center;
   background-color: var(--footer-backgroung-color);
-  background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradiet-end)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.58), rgba(47, 48, 58, 0.58)),
     url(/images/herobgi.jpg);
   color: var(--primary-background-color);
   max-width: 1600px;
