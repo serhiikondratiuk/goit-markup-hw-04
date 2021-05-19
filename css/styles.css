@@ -9,6 +9,8 @@
 /* бордер цвет карточек портфолио #eeeeee */
 /* цвет "Studio" хедера #000000 */
 /* цвет нижней рамки футера #ececec */
+/* начальный цвет градиента героя rgba(47, 48, 58, 0.58) */
+/* конечный цвет градиента героя rgba(47, 48, 58, 0.58) */
 
 :root {
   --primary-text-color: #212121;
@@ -22,6 +24,8 @@
   --portfolio-cards-border-color: #eeeeee;
   --logo-secondary-color: #000000;
   --header-line-color: #ececec;
+  --hero-gradient-start: rgba(47, 48, 58, 0.58);
+  --hero-gradiet-end: rgba(47, 48, 58, 0.58);
 }
 /* ================ Сбросы ================ */
 h1,
@@ -48,6 +52,9 @@ img {
   margin-left: auto;
 }
 .section {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -148,12 +155,15 @@ body {
 .hero {
   text-align: center;
   background-color: var(--footer-backgroung-color);
+  background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradiet-end)),
+    url(/images/herobgi.jpg);
   color: var(--primary-background-color);
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -335,6 +345,9 @@ body {
 /* ========================= Футер ========================= */
 .footer {
   background-color: var(--footer-backgroung-color);
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
