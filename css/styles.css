@@ -152,6 +152,7 @@ body {
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
+  min-height: 18px;
 }
 .contacts-link:hover,
 .contacts-link:focus {
